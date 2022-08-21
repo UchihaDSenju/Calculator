@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cal" style="padding-bottom: 14px">
+        <div class="display">
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="buttons">
+            <div class="btnrows">
+                <button id="C" class="num" value="" onclick="cle()">C</button>
+            </div>
+            <div class="btnrows">
+                <button class="num" value="7" onclick="da('7','7')">7</button>
+                <button class="num" value="8" onclick="da('8','8')">8</button>
+                <button class="num" value="9" onclick="da('9','9')">9</button>
+                <button class="num" value="&divide;" onclick="da('/','&divide')">&divide;</button>
+            </div>
+            <br>
+            <div class="btnrows">
+                <button class="num" value="4" onclick="da('4','4')">4</button>
+                <button class="num" value="5" onclick="da('5','5')">5</button>
+                <button class="num" value="6" onclick="da('6','6')">6</button>
+                <button class="num" value="*" onclick="da('*','&times')">&times;</button>
+            </div>
+            <br>
+            <div class="btnrows">
+                <button class="num" value="1" onclick="da('1','1')">1</button>
+                <button class="num" value="2" onclick="da('2','2')">2</button>
+                <button class="num" value="3" onclick="da('3','3')">3</button>
+                <button class="num" value="-" onclick="da('-','-')">-</button>
+            </div>
+            <br>
+            <div class="btnrows">
+                <button class="num" value="0" onclick="da('0','0')">0</button>
+                <button class="num" value="." onclick="da('.','.')">.</button>
+                <button class="num" value="=" onclick="solv()">=</button>
+                <button class="num" value="+" onclick="da('+','+')">+</button>
+            </div>
+        </div>
+    </div>
+    <h1></h1>
+    <p></p>
+    <script src="./calculator.js"></script>
+</body>
+</html>
